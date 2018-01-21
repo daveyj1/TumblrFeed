@@ -74,6 +74,7 @@ class PhotosViewController: UIViewController, UITableViewDataSource, UITableView
         let indexPath = tableView.indexPath(for: cell)!
     
         let post = posts[indexPath.row]
+        vc.caption = post["caption"] as! String
         if let photos = post["photos"] as? [[String: Any]] {
             let photo = photos[0]
             let originalSize = photo["original_size"] as! [String: Any]
