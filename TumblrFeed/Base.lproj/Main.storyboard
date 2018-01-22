@@ -10,7 +10,7 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Photos View Controller-->
+        <!--Tumblr-->
         <scene sceneID="IGh-xC-nfr">
             <objects>
                 <viewController id="hg3-nP-jOa" customClass="PhotosViewController" customModule="TumblrFeed" customModuleProvider="target" sceneMemberID="viewController">
@@ -47,7 +47,9 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <viewLayoutGuide key="safeArea" id="uHG-vW-XSX"/>
                     </view>
-                    <navigationItem key="navigationItem" id="adc-jS-INV"/>
+                    <navigationItem key="navigationItem" title="Tumblr" id="adc-jS-INV">
+                        <barButtonItem key="backBarButtonItem" title="Back" id="lXP-QJ-Mg5"/>
+                    </navigationItem>
                     <connections>
                         <outlet property="tableView" destination="ytC-iO-aJG" id="FTm-8e-IAk"/>
                     </connections>
@@ -69,7 +71,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XN8-HA-Zvk">
-                                <rect key="frame" x="16" y="329" width="343" height="318"/>
+                                <rect key="frame" x="16" y="283" width="343" height="364"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                 <nil key="textColor"/>
@@ -79,7 +81,9 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <viewLayoutGuide key="safeArea" id="0FB-mg-7H4"/>
                     </view>
-                    <navigationItem key="navigationItem" id="vbD-SS-u6P"/>
+                    <navigationItem key="navigationItem" id="vbD-SS-u6P">
+                        <barButtonItem key="backBarButtonItem" title="Back" id="raY-7M-yEi"/>
+                    </navigationItem>
                     <connections>
                         <outlet property="captionLabel" destination="XN8-HA-Zvk" id="Uxd-Dj-0b8"/>
                         <outlet property="detailedImage" destination="PnD-qg-mfC" id="de3-5q-PAC"/>
